@@ -1,0 +1,81 @@
+.hobbies h2 {
+  padding: 0.5em;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+section.hobbies {
+  background-color: rgb(242, 244, 247);
+  padding-bottom: 2em;
+}
+
+.logos-hobbies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 5em;
+  margin-top: 1em;
+}
+
+.card-hobbies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.2em 0.5em 0.2em #00000010;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hobbies-logo {
+  display: flex;
+  width: auto;
+  min-width: 2em;
+  max-width: 5em;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0em;
+}
+
+.hobbies-nombre {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: auto;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+#entrenamiento {
+  margin-left: 1.1em;
+}
+
+#musica {
+  margin-left: 2.5em;
+}
+
+#bicicleta {
+  margin-left: 1.2em;
+}
+
+#bajo {
+  margin-left: 1.25em;
+}
+
+@media screen and (min-width: 1024px) {
+  .hobbies h2 {
+    padding-left: 1.8em;
+  }
+
+  .logos-hobbies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1em 10em 5em 10em;
+    gap: 2em;
+  }
+}

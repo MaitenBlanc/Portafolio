@@ -1,0 +1,41 @@
+.pie-contacto {
+  background-color: #2980b9;
+  padding: 3em 5em 1em 5em;
+}
+
+.contacto ul {
+  display: grid;
+  grid-template-columns: repeat(5, 30%);
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto img {
+  display: grid;
+  width: auto;
+  max-width: 5em;
+  justify-content: center;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.contacto img:hover {
+  transform: scale(1.5);
+}
+
+.desarrollado {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-align: center;
+  margin-top: 4em;
+}
+
+@media screen and (min-width: 1024px) {
+  .contacto ul {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+}

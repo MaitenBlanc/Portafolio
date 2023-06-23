@@ -1,0 +1,247 @@
+.proyectos h2 {
+  padding: 0.5em;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.proyectos {
+  display: flexbox;
+  background-color: rgb(242, 244, 247);
+  padding-bottom: 5em;
+}
+
+.icono {
+  width: 1em;
+  vertical-align: text-bottom;
+}
+
+.titulo-proyecto {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4em;
+  text-decoration: underline;
+  padding-left: 1.8em;
+}
+
+.proyectos .item {
+  display: flex;
+  width: 10em;
+  color: #2980b9;
+  border: 0.1em solid #2980b9;
+  border-radius: 1em;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+  margin: 1em auto;
+}
+
+.proyectos .item:hover {
+  background-color: #2980b9;
+  padding: 1em;
+  color: #fff;
+}
+
+.bi bi-box-arrow-right {
+  align-content: center;
+  text-align: justify;
+}
+
+.galeria-principal {
+  display: none;
+  width: auto;
+  height: 100%;
+  margin: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 1em;
+  max-width: 8em;
+  min-width: 3em;
+  padding: 0 0.6em;
+  list-style: none;
+}
+
+.btn-icon-1 {
+  display: flex;
+  position: absolute;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em 0 0 2.5em;
+  animation-name: parpadeo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.btn-icon-2 {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em 0 0 10.5em;
+  animation-name: parpadeo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.btn-icon-3 {
+  display: flex;
+  position: absolute;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5em 0 0 18.5em;
+  animation-name: parpadeo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.galeria img {
+  display: grid;
+  width: 100%;
+  max-width: auto;
+  border-radius: 1em;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria-interna {
+  display: flex;
+  width: auto;
+  max-width: 60em;
+  border: 0.1em solid #f3f3f3;
+  justify-content: center;
+  position: relative;
+}
+
+.imagen-activa {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.btn-cierra {
+  position: absolute;
+  top: 0;
+  right: 2.7em;
+  width: 0.2em;
+}
+
+.btn-retrocede {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 3em;
+}
+
+.btn-adelanta {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 3em;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  .proyectos h2 {
+    padding-left: 1.8em;
+  }
+
+  .titulo-proyecto {
+    padding-left: 10em;
+  }
+
+  .galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 2em 36em;
+    width: auto;
+    min-width: 6em;
+    max-width: 13em;
+  }
+
+  .galeria-interna {
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+
+  .imagen-activa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-icon-1 {
+    margin: 1em 0 0 -25em;
+  }
+
+  .btn-icon-2 {
+    margin: 1em 0 0 0;
+  }
+
+  .btn-icon-3 {
+    margin: 1em 0 0 26em;
+  }
+}

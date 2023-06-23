@@ -1,0 +1,108 @@
+.formacion h2 {
+  padding: 0.5em;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+.contenedor-formacion {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  margin-bottom: 5em;
+}
+
+.card-formacion {
+  list-style: none;
+  margin: 1.5em;
+  padding: 0em;
+  border-radius: 0.5em;
+  box-shadow: 0 0.2em 0.5em 0.2em #00000010;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+.formacion-logo {
+  display: block;
+  width: auto;
+  max-width: 3em;
+  margin: auto;
+  padding: 1em 0 1em 0;
+}
+
+.curso {
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.curso-nombre {
+  margin: 0;
+  padding-bottom: 0.5em;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.pie-card {
+  background-color: rgb(242, 244, 247);
+  margin: 0 auto auto auto;
+  width: 100%;
+  border-top: 1px outset #80a5dd;
+}
+
+#alura {
+  width: auto;
+  max-width: 5em;
+}
+
+#open-bootcamp {
+  width: auto;
+  max-width: 7em;
+}
+
+#argentina-programa {
+  width: auto;
+  max-width: 7em;
+}
+
+@media screen and (min-width: 1024px) {
+  .formacion h2 {
+    padding-left: 1.8em;
+  }
+
+  .contenedor-formacion {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1em 10em 5em 10em;
+  }
+
+  .curso-nombre {
+    padding: 0;
+  }
+
+  .formacion-logo {
+    width: auto;
+    min-width: 5em;
+    max-width: 7em;
+  }
+
+  #alura {
+    width: auto;
+    max-width: 20em;
+    padding: 1.05em;
+  }
+
+  #open-bootcamp {
+    width: auto;
+    max-width: 22em;
+  }
+
+  #argentina-programa {
+    width: auto;
+    max-width: 22em;
+    padding: 1.4em;
+  }
+}
